@@ -11,6 +11,7 @@
 /// <param name="out"></param>  // Output "transformed signal" in frequency domain
 void DFT (double x[], int N, complex<double> X[]){
     complex<double> sum;
+
     // For each output value X[k]
     for( int k = 0; k < N; k++ ){
 
@@ -21,10 +22,4 @@ void DFT (double x[], int N, complex<double> X[]){
         }
         X[k] = sum;
     }
-
-
 }
-
-
-
-
